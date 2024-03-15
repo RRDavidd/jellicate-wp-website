@@ -1,6 +1,19 @@
+@import url("../../node_modules/bootstrap/scss/bootstrap.scss");
 @font-face {
   font-family: "Archivo";
   src: url("../../fonts/Archivo-SemiBold.woff2") format("woff2"), url("../../fonts/Archivo-SemiBold.woff") format("woff");
+}
+@font-face {
+  font-family: "ArchivoItalic";
+  src: url("../../fonts/Archivo-SemiBoldItalic.woff2") format("woff2"), url("../../fonts/Archivo-SemiBoldItalic.woff") format("woff");
+}
+@font-face {
+  font-family: "Libre Franklin";
+  src: url("../../fonts/LibreFranklin-Thin.woff2") format("woff2"), url("../../fonts/LibreFranklin-Thin.woff") format("woff");
+}
+@font-face {
+  font-family: "Libre Franklin Italic";
+  src: url("../../fonts/LibreFranklin-ThinItalic.woff2") format("woff2"), url("../../fonts/LibreFranklin-ThinItalic.woff") format("woff");
 }
 * {
   box-sizing: border-box;
@@ -14,9 +27,21 @@ body {
   width: 1200px;
 }
 
-h1 {
+body h1, body h2, body h3, body h4, body h5, body h6, main h1, main h2, main h3, main h4, main h5, main h6 {
   font-family: "Archivo", sans-serif;
+  font-weight: bold;
   font-size: 2rem;
   color: #000000;
   margin: 1rem 0;
+}
+body p, body a, body li, body span, body input, body button, body label, body select, body option, body textarea, main p, main a, main li, main span, main input, main button, main label, main select, main option, main textarea {
+  font-family: "Libre Franklin", sans-serif;
+  font-weight: 600;
+  font-size: 1rem;
+  color: #000000;
+  margin: 0.5rem 0;
+}
+body a, main a {
+  text-decoration-color: #3c10b4;
+  color: #3c10b4;
 }

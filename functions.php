@@ -2,6 +2,10 @@
 
 //enqueue scripts and styles
 function enqueue_scripts_and_stylesheets() {
+  //bootstrap node module
+  wp_enqueue_style('bootstrap', get_template_directory_uri() . '/node_modules/bootstrap/dist/css/bootstrap.min.css');
+
+  //my css and js
   wp_enqueue_style('stylesheet', get_template_directory_uri() . '/stylesheets/css/general.css');
   wp_enqueue_script('scripts', get_template_directory_uri() . '/js/general.min.js', array(), false, true);
 }

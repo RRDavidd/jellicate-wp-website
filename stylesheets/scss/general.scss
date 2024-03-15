@@ -13,9 +13,32 @@ body {
   width: $main-container;
 }
 
-h1 {
-  font-family: $font-archivo;
-  font-size: $h1-size;
-  color: $color-black;
-  margin: 1rem 0;
+
+body, main {
+  h1, h2, h3, h4, h5, h6{
+    font-family: $font-archivo;
+    font-weight: bold;
+    font-size: $h1-size;;
+    color: $color-black;
+    margin: 1rem 0;
+  }
+
+  p, a, li, span, input, button, label, select, option, textarea {
+    font-family: $font-libre;
+    font-weight: 600;
+    font-size: $p-size;
+    color: $color-black;
+    margin: 0.5rem 0;
+  }
+
+  a {
+    text-decoration-color: #3c10b4;
+    color: #3c10b4;
+  }
+
 }
+
+
+
+
+
