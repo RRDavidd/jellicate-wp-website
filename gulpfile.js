@@ -37,3 +37,4 @@ function watchSass() {
 gulp.task("js", compileJS);
 gulp.task("watch", watchSass);
 gulp.task("sass", compileSass);
+gulp.task("default", gulp.series(compileSass, compileJS,))

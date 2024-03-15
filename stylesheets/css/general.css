@@ -1,5 +1,22 @@
+@font-face {
+  font-family: "Archivo";
+  src: url("../../fonts/Archivo-SemiBold.woff2") format("woff2"), url("../../fonts/Archivo-SemiBold.woff") format("woff");
+}
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+body {
+  background-color: #ffadd6;
+  margin-inline: auto;
+  width: 1200px;
+}
+
+h1 {
+  font-family: "Archivo", sans-serif;
+  font-size: 2rem;
+  color: #000000;
+  margin: 1rem 0;
 }
