@@ -24,7 +24,7 @@
 body {
   background-color: #ffadd6;
   margin-inline: auto;
-  width: 1200px;
+  margin-top: 25px;
 }
 
 body h1, body h2, body h3, body h4, body h5, body h6, main h1, main h2, main h3, main h4, main h5, main h6 {
@@ -34,14 +34,13 @@ body h1, body h2, body h3, body h4, body h5, body h6, main h1, main h2, main h3,
   color: #000000;
   margin: 1rem 0;
 }
-body p, body a, body li, body span, body input, body button, body label, body select, body option, body textarea, main p, main a, main li, main span, main input, main button, main label, main select, main option, main textarea {
+body p, body li, body span, main p, main li, main span {
   font-family: "Libre Franklin", sans-serif;
   font-weight: 600;
-  font-size: 1rem;
   color: #000000;
   margin: 0.5rem 0;
 }
 body a, main a {
-  text-decoration-color: #3c10b4;
+  text-decoration: none;
   color: #3c10b4;
 }

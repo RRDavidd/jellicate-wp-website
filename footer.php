@@ -2,7 +2,9 @@
 
 
 
-<?php wp_footer(); ?>
-
-</body>
+    <footer>
+        Hello From the footer
+    </footer>
+    <?php wp_footer(); ?>
+    </body>
 </html>

@@ -10,7 +10,24 @@
 body {
   background-color: $color1;
   margin-inline: auto;
-  width: $main-container;
+  // max-width: 1200px;
+  margin-top: 25px;
+
+  // @media screen and (max-width: 1199px) {
+  //   max-width: 992px;
+  // }
+
+  // @media screen and (max-width: 991px) {
+  //   max-width: 768px;
+  // }
+
+  // @media screen and (max-width: 767px) {
+  //   max-width: 576px;
+  // }
+
+  // @media screen and (max-width: 575px) {
+  //   max-width: 100%;
+  // }
 }
 
 
@@ -23,16 +40,15 @@ body, main {
     margin: 1rem 0;
   }
 
-  p, a, li, span, input, button, label, select, option, textarea {
+  p, li, span {
     font-family: $font-libre;
     font-weight: 600;
-    font-size: $p-size;
     color: $color-black;
     margin: 0.5rem 0;
   }
 
   a {
-    text-decoration-color: #3c10b4;
+    text-decoration: none;
     color: #3c10b4;
   }
 
