@@ -1,5 +1,6 @@
 @import "variables";
-
+@import "menu";
+@import "post-item";
 
 * {
   box-sizing: border-box;
@@ -8,7 +9,10 @@
 }
 
 body {
-  background-color: $color1;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: $color-white;
   margin-inline: auto;
   // max-width: 1200px;
   margin-top: 25px;
@@ -28,6 +32,15 @@ body {
   // @media screen and (max-width: 575px) {
   //   max-width: 100%;
   // }
+}
+
+button, a.button {
+  background-color: $color1;
+  color: $color-white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
 
@@ -51,8 +64,9 @@ body, main {
     text-decoration: none;
     color: #3c10b4;
   }
-
 }
+
+
 
 
 

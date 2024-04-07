@@ -1,0 +1,17 @@
+.post-container{
+  margin-bottom: 2rem;
+  .post-item {
+    padding: 20px;
+    .post-content {
+      .post-description {
+        margin-bottom: 1.5rem;
+      }
+    }
+    .post-image {
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+}
+}

@@ -1,10 +1,9 @@
 
+        </main>
+            <footer>
+                Hello From the footer
+            </footer>
 
-
-
-    <footer>
-        Hello From the footer
-    </footer>
-    <?php wp_footer(); ?>
+            <?php wp_footer(); ?>
     </body>
 </html>

@@ -15,6 +15,43 @@
   font-family: "Libre Franklin Italic";
   src: url("../../fonts/LibreFranklin-ThinItalic.woff2") format("woff2"), url("../../fonts/LibreFranklin-ThinItalic.woff") format("woff");
 }
+#menu-header-menu {
+  display: flex;
+}
+#menu-header-menu li {
+  text-decoration: none;
+  list-style: none;
+  margin-left: 1rem;
+}
+
+footer {
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  background-color: #ffadd6;
+  color: #ffffff;
+  padding: 1rem;
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+  font-family: "Archivo", sans-serif;
+  margin-top: auto;
+}
+
+.post-container {
+  margin-bottom: 2rem;
+}
+.post-container .post-item {
+  padding: 20px;
+}
+.post-container .post-item .post-content .post-description {
+  margin-bottom: 1.5rem;
+}
+.post-container .post-item .post-image img {
+  width: 100%;
+  height: auto;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -22,9 +59,21 @@
 }
 
 body {
-  background-color: #ffadd6;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #ffffff;
   margin-inline: auto;
   margin-top: 25px;
+}
+
+button, a.button {
+  background-color: #ffadd6;
+  color: #ffffff;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
 body h1, body h2, body h3, body h4, body h5, body h6, main h1, main h2, main h3, main h4, main h5, main h6 {
