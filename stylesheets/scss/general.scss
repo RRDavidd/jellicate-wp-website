@@ -1,6 +1,7 @@
 @import "variables";
 @import "menu";
 @import "post-item";
+@import "header";
 
 * {
   box-sizing: border-box;
@@ -15,8 +16,6 @@ body {
   background-color: $color-white;
   margin-inline: auto;
   // max-width: 1200px;
-  margin-top: 25px;
-
   // @media screen and (max-width: 1199px) {
   //   max-width: 992px;
   // }
@@ -66,7 +65,13 @@ body, main {
   }
 }
 
-
+.hero-banner {
+  figure {
+    img {
+      width: 100%;
+    }
+  }
+}
 
 
 

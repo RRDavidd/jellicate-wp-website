@@ -1,7 +1,14 @@
 <?php get_header();
-global $product;
 ?>
 <main>
+    <div class="hero-banner row">
+        <figure class="col-6">
+            <img src="<?php echo get_template_directory_uri(); ?>/public/images/placeholder.jpg"  alt="logo">
+        </figure>
+        <figure class="col-6">
+            <img src="<?php echo get_template_directory_uri(); ?>/public/images/placeholder.jpg"  alt="logo">
+        </figure>
+    </div>
     <div class="post-container row">
         <?php
             $args = array(
@@ -11,7 +18,8 @@ global $product;
             $query = new WP_Query($args);
             while($query->have_posts()){
                 $query->the_post();
-                $product = wc_get_product(get_the_ID());
+                $product_id = get_the_ID();
+                $product = wc_get_product($product_id);
                 ?>
                 <div class="post-item col-md-4 col-12 gap-3">
                     <a href="<?php the_permalink(); ?>">

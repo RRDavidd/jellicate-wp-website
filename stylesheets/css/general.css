@@ -52,6 +52,24 @@ footer {
   height: auto;
 }
 
+.header-banner1 {
+  color: #ffffff;
+  background: #cd8cf4;
+  padding: 0.25rem;
+  text-align: center;
+}
+
+.header-banner2 {
+  color: #ffffff;
+  background: #cd8cf4;
+  padding: 0.25rem;
+  text-align: center;
+}
+
+header {
+  margin-top: 1rem;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -64,7 +82,6 @@ body {
   min-height: 100vh;
   background-color: #ffffff;
   margin-inline: auto;
-  margin-top: 25px;
 }
 
 button, a.button {
@@ -92,4 +109,8 @@ body p, body li, body span, main p, main li, main span {
 body a, main a {
   text-decoration: none;
   color: #3c10b4;
+}
+
+.hero-banner figure img {
+  width: 100%;
 }
