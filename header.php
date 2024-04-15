@@ -21,7 +21,7 @@
       <div>
         <ul id="menu-header-menu">
           <li><a href="<?php get_home_url() ?>">Home</a></li>
-          <li class="cart-button"><a href="<?php echo get_home_url() . "/cart"; ?>">Cart</a></li>
+          <li class="cart-button"><a href="<?php echo get_home_url() . "/my-cart"; ?>">Cart</a></li>
         </ul>
       </div>
     </nav>
