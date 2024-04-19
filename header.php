@@ -17,6 +17,11 @@
           <img src="<?php echo get_template_directory_uri(); ?>/public/images/logo.png" width="50" alt="logo">
         </figure>
       </a>
+      <a href="<?php echo get_home_url(); ?>">
+        <figure>
+          <img src="<?php echo get_template_directory_uri(); ?>/public/images/jellicate-text.png" width="50" alt="logo">
+        </figure>
+      </a>
       <nav>
       <?php wp_nav_menu(array(
           'menu' => 'Header Menu',

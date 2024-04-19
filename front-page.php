@@ -14,7 +14,7 @@
             </video>
         </div>
     </div>
-    <div class="post-container row">
+    <div class="post-container container row gap-3">
         <?php
             $args = array(
                 'post_type' => 'product',
@@ -26,14 +26,17 @@
                 $product_id = get_the_ID();
                 $product = wc_get_product($product_id);
                 ?>
-                <div class="post-item col-md-4 col-12 gap-3">
+                <div class="post-item col-md-4 col-12">
                     <a href="<?php the_permalink(); ?>">
                         <figure class="post-image"><?php the_post_thumbnail(); ?></figure>
                     </a>
                     <div class="post-content">
                         <h4><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h4>
                         <div class="post-description">
-                            <?php the_content(); ?>
+                        <?php
+                            $content = get_the_content();
+                            echo (strlen($content) > 50) ? substr($content, 0, 50) . '...' : $content;
+                        ?>
                         </div>
                         <?php echo "<a class='button' href='".$product->add_to_cart_url()."'>Add to Cart</a>"; ?>
                     </div>
