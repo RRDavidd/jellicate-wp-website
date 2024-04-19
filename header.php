@@ -12,14 +12,14 @@
   </div>
   <main class="main-body container">
     <header class="d-flex justify-content-between">
-      <a href="<?php echo get_home_url(); ?>">
+      <a class="header-logo-1" href="<?php echo get_home_url(); ?>">
         <figure>
           <img src="<?php echo get_template_directory_uri(); ?>/public/images/logo.png" width="50" alt="logo">
         </figure>
       </a>
-      <a href="<?php echo get_home_url(); ?>">
+      <a class="header-logo-2" href="<?php echo get_home_url(); ?>">
         <figure>
-          <img src="<?php echo get_template_directory_uri(); ?>/public/images/jellicate-text.png" width="50" alt="logo">
+          <img src="<?php echo get_template_directory_uri(); ?>/public/images/jellicate-text.png" width="200" alt="logo">
         </figure>
       </a>
       <nav>
