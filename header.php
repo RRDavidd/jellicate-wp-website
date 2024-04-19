@@ -14,7 +14,7 @@
   <header class="d-flex justify-content-between">
     <a href="<?php echo get_home_url(); ?>">
       <figure>
-        <img src="<?php echo get_template_directory_uri(); ?>/public/images/jellicate-logo.png" width="50" alt="logo">
+        <img src="<?php echo get_template_directory_uri(); ?>/public/images/logo.png" width="50" alt="logo">
       </figure>
     </a>
     <nav>

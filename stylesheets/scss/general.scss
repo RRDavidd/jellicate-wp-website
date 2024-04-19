@@ -61,7 +61,7 @@ body, main {
 
   a {
     text-decoration: none;
-    color: #3c10b4;
+    color: #585858;
   }
 }
 
@@ -69,7 +69,14 @@ body, main {
   figure {
     img {
       width: 100%;
+      height: 500px;
+      object-fit: cover;
     }
+  }
+  video {
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
   }
 }
 

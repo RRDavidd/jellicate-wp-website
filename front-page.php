@@ -2,12 +2,17 @@
 ?>
 <main>
     <div class="hero-banner row">
-        <figure class="col-6">
-            <img src="<?php echo get_template_directory_uri(); ?>/public/images/placeholder.jpg"  alt="logo">
+        <figure class="col-md-6 col-12">
+            <img src="<?php echo get_template_directory_uri(); ?>/public/images/hero-1.jpg"  alt="logo">
         </figure>
-        <figure class="col-6">
-            <img src="<?php echo get_template_directory_uri(); ?>/public/images/placeholder.jpg"  alt="logo">
+        <figure class="col-md-6 col-12">
+            <img src="<?php echo get_template_directory_uri(); ?>/public/images/hero-2.jpg"  alt="logo">
         </figure>
+        <div class="col-12">
+            <video loop muted autoplay>
+                <source src="<?php echo get_template_directory_uri(); ?>/public/videos/dream-cloud.mp4" type="video/mp4">
+            </video>
+        </div>
     </div>
     <div class="post-container row">
         <?php
@@ -26,7 +31,7 @@
                         <figure class="post-image"><?php the_post_thumbnail(); ?></figure>
                     </a>
                     <div class="post-content">
-                        <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
+                        <h4><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h4>
                         <div class="post-description">
                             <?php the_content(); ?>
                         </div>
