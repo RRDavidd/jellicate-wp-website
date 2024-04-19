@@ -52,7 +52,7 @@ body, main {
     margin: 1rem 0;
   }
 
-  p, li, span {
+  p, li {
     font-family: $font-libre;
     font-weight: 600;
     color: $color-black;
@@ -80,7 +80,6 @@ body, main {
   }
 }
 
-
-
-
-
+.main-body {
+  margin-bottom: 1rem;
+}

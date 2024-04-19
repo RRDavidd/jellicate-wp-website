@@ -28,14 +28,18 @@ footer {
   bottom: 0;
   right: 0;
   width: 100%;
-  background-color: #ffadd6;
+  background-color: #d99bff;
   color: #ffffff;
   padding: 1rem;
-  text-align: center;
   font-size: 1.2rem;
   font-weight: bold;
   font-family: "Archivo", sans-serif;
   margin-top: auto;
+}
+footer .menu-footer-menu-container li {
+  text-decoration: none;
+  list-style: none;
+  margin-left: 1rem;
 }
 
 .post-container {
@@ -57,14 +61,14 @@ footer {
 
 .header-banner1 {
   color: #ffffff;
-  background: #cd8cf4;
+  background: #ff9ecf;
   padding: 0.25rem;
   text-align: center;
 }
 
 .header-banner2 {
   color: #ffffff;
-  background: #cd8cf4;
+  background: #d99bff;
   padding: 0.25rem;
   text-align: center;
 }
@@ -89,7 +93,7 @@ body {
 }
 
 button, a.button {
-  background-color: #ffadd6;
+  background-color: #ff9ecf;
   color: #ffffff;
   border: none;
   padding: 0.5rem 1rem;
@@ -104,7 +108,7 @@ body h1, body h2, body h3, body h4, body h5, body h6, main h1, main h2, main h3,
   color: #000000;
   margin: 1rem 0;
 }
-body p, body li, body span, main p, main li, main span {
+body p, body li, main p, main li {
   font-family: "Libre Franklin", sans-serif;
   font-weight: 600;
   color: #000000;
@@ -124,4 +128,8 @@ body a, main a {
   width: 100%;
   height: 450px;
   object-fit: cover;
+}
+
+.main-body {
+  margin-bottom: 1rem;
 }
