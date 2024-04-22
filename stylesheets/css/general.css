@@ -126,6 +126,24 @@ section.related.products {
   background: #d99bff !important;
 }
 
+#cart-nav-item {
+  position: relative;
+}
+#cart-nav-item span.cart-count {
+  position: absolute;
+  top: -15px;
+  left: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  background: #ff9ecf !important;
+  color: #ffffff !important;
+  border-radius: 50% !important;
+  padding: 5px !important;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;

@@ -23,9 +23,54 @@
         </figure>
       </a>
       <nav>
-      <?php wp_nav_menu(array(
-          'menu' => 'Header Menu',
-          'menu_class' => 'header-menu'
-        ));?>
+      <!-- Need to use walker for cart number -->
+      <?php
+        class Cart_Walker extends Walker_Nav_Menu {
+          function start_el(&$output, $item, $depth = 0, $args = array(), $id = 0) {
+              global $wp_query;
+              $indent = ( $depth ) ? str_repeat( "\t", $depth ) : '';
+
+              $class_names = $value = '';
+
+              $classes = empty( $item->classes ) ? array() : (array) $item->classes;
+
+              $class_names = join( ' ', apply_filters( 'nav_menu_css_class', array_filter( $classes ), $item ) );
+              $class_names = ' class="' . esc_attr( $class_names ) . '"';
+
+              if( $item->title === 'Cart' ) {
+                $output .= $indent . '<li id="cart-nav-item" class="menu-item-' . $item->ID . '"' . $value . $class_names .'>';
+              } else {
+                  $output .= $indent . '<li id="menu-item-'. $item->ID . '"' . $value . $class_names .'>';
+              }
+
+              $attributes  = ! empty( $item->attr_title ) ? ' title="'  . esc_attr( $item->attr_title ) .'"' : '';
+              $attributes .= ! empty( $item->target )     ? ' target="' . esc_attr( $item->target     ) .'"' : '';
+              $attributes .= ! empty( $item->xfn )        ? ' rel="'    . esc_attr( $item->xfn        ) .'"' : '';
+              $attributes .= ! empty( $item->url )        ? ' href="'   . esc_attr( $item->url        ) .'"' : '';
+
+              $item_output = $args->before;
+              $item_output .= '<a'. $attributes .'>';
+              $item_output .= $args->link_before . apply_filters( 'the_title', $item->title, $item->ID );
+
+              // Add cart count if this is the cart menu item
+              if( $item->title === 'Cart' ) {
+                  $cart_count = WC()->cart->get_cart_contents_count();
+                  $item_output .= $cart_count > 0 ? '<span class="cart-count">' . $cart_count . '</span>' : '';
+              }
+
+              $item_output .= $args->link_after . '</a>';
+              $item_output .= $args->after;
+
+              $output .= apply_filters( 'walker_nav_menu_start_el', $item_output, $item, $depth, $args );
+            }
+        }
+
+          // Use our custom walker
+          wp_nav_menu(array(
+              'menu' => 'Header Menu',
+              'menu_class' => 'header-menu',
+              'walker' => new Cart_Walker()
+          ));
+        ?>
       </nav>
     </header>

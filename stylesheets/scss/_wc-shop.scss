@@ -50,3 +50,21 @@ section.related.products {
     background: $color2!important;
   }
 }
+
+#cart-nav-item {
+  position: relative;
+  span.cart-count {
+    position: absolute;
+    top: -15px;
+    left: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px; // Adjust as needed
+    height: 30px; // Adjust as needed
+    background: $color1!important;
+    color: $color-white!important;
+    border-radius: 50%!important;
+    padding: 5px!important;
+  }
+}
