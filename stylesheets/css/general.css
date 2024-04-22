@@ -59,6 +59,7 @@ footer .menu-footer-menu-container li {
   height: auto;
   max-height: 300px;
   border-radius: 0.785rem;
+  object-fit: cover;
 }
 
 .header-banner1 {
@@ -78,6 +79,15 @@ footer .menu-footer-menu-container li {
 header {
   margin-top: 1rem;
   margin-bottom: 1.5rem;
+}
+
+ul.products .product {
+  background: #ffdffd !important;
+  border-radius: 0.785rem !important;
+  padding: 30px !important;
+}
+ul.products .product .woocommerce-LoopProduct-link img {
+  border-radius: 0.785rem30px !important;
 }
 
 * {

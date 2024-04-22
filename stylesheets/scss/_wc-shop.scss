@@ -1,0 +1,13 @@
+
+ul.products {
+  .product {
+    background: $color3!important;
+    border-radius: .785rem!important;
+    padding: 30px!important;
+    .woocommerce-LoopProduct-link {
+      img {
+        border-radius: .785rem30px!important;
+      }
+    }
+  }
+}
