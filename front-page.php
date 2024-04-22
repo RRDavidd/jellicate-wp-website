@@ -26,7 +26,7 @@
                 $product_id = get_the_ID();
                 $product = wc_get_product($product_id);
                 ?>
-                <div class="post-item col-md-4 col-12">
+                <div class="post-item col-md-3 col-12">
                     <a href="<?php the_permalink(); ?>">
                         <figure class="post-image"><?php the_post_thumbnail(); ?></figure>
                     </a>
