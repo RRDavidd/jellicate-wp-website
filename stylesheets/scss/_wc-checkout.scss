@@ -1,0 +1,54 @@
+form.woocommerce-checkout {
+  .woocommerce-billing-fields {
+    h3 {
+      font-family: $font-archivo!important;
+      font-weight: bold!important;
+      font-size: $h3-size!important;
+      color: $color-black!important;
+      margin: 1rem 0!important;
+    }
+    label {
+      font-family: $font-libre!important;
+      font-weight: 600!important;
+      color: $color-black!important;
+      margin: 0.5rem 0!important;
+    }
+    input {
+      border: 1px solid $color-black!important;
+      border-radius: 5px!important;
+      padding: 0.5rem!important;
+      margin: 0.5rem 0!important;
+    }
+  }
+
+  .woocommerce-additional-fields {
+    .woocommerce-shipping-fields {
+      .shipping_address .woocommerce-shipping-fields__field-wrapper {
+        p {
+          label {
+            font-family: $font-libre!important;
+            font-weight: 600!important;
+            color: $color-black!important;
+            margin: 0.5rem 0!important;
+          }
+          span input {
+            border: 1px solid $color-black!important;
+            border-radius: 5px!important;
+            padding: 0.5rem!important;
+            margin: 0.5rem 0!important;
+          }
+        }
+      }
+    }
+
+    .woocommerce-input-wrapper {
+      textarea {
+        border: 1px solid $color-black!important;
+        border-radius: 5px!important;
+        padding: 0.5rem!important;
+        margin: 0.5rem 0!important;
+      }
+    }
+
+  }
+}

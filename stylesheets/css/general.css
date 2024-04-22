@@ -45,7 +45,6 @@ footer .menu-footer-menu-container li {
 .post-container {
   margin-bottom: 2rem;
   margin-top: 2rem;
-  justify-content: center;
 }
 .post-container .post-item {
   background: #ffdffd;
@@ -165,6 +164,44 @@ section.related.products {
   color: #ffffff !important;
   border-radius: 50% !important;
   padding: 5px !important;
+}
+
+form.woocommerce-checkout .woocommerce-billing-fields h3 {
+  font-family: "Archivo", sans-serif !important;
+  font-weight: bold !important;
+  font-size: 1.25rem !important;
+  color: #000000 !important;
+  margin: 1rem 0 !important;
+}
+form.woocommerce-checkout .woocommerce-billing-fields label {
+  font-family: "Libre Franklin", sans-serif !important;
+  font-weight: 600 !important;
+  color: #000000 !important;
+  margin: 0.5rem 0 !important;
+}
+form.woocommerce-checkout .woocommerce-billing-fields input {
+  border: 1px solid #000000 !important;
+  border-radius: 5px !important;
+  padding: 0.5rem !important;
+  margin: 0.5rem 0 !important;
+}
+form.woocommerce-checkout .woocommerce-additional-fields .woocommerce-shipping-fields .shipping_address .woocommerce-shipping-fields__field-wrapper p label {
+  font-family: "Libre Franklin", sans-serif !important;
+  font-weight: 600 !important;
+  color: #000000 !important;
+  margin: 0.5rem 0 !important;
+}
+form.woocommerce-checkout .woocommerce-additional-fields .woocommerce-shipping-fields .shipping_address .woocommerce-shipping-fields__field-wrapper p span input {
+  border: 1px solid #000000 !important;
+  border-radius: 5px !important;
+  padding: 0.5rem !important;
+  margin: 0.5rem 0 !important;
+}
+form.woocommerce-checkout .woocommerce-additional-fields .woocommerce-input-wrapper textarea {
+  border: 1px solid #000000 !important;
+  border-radius: 5px !important;
+  padding: 0.5rem !important;
+  margin: 0.5rem 0 !important;
 }
 
 * {
