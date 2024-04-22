@@ -98,7 +98,6 @@ ul.products .product .woocommerce-LoopProduct-link img {
   background: #ff9ecf !important;
   color: #ffffff !important;
   border: none !important;
-  padding: 0.5rem 1rem !important;
   border-radius: 5px !important;
   cursor: pointer !important;
 }
@@ -113,6 +112,17 @@ ul.products .product .woocommerce-LoopProduct-link img {
 
 section.related.products {
   display: inline-block !important;
+}
+
+.add_to_cart_button, .button.product_type_simple {
+  background: #ff9ecf !important;
+  color: #ffffff !important;
+  border: none !important;
+  border-radius: 5px !important;
+  cursor: pointer !important;
+}
+.add_to_cart_button:hover, .button.product_type_simple:hover {
+  background: #d99bff !important;
 }
 
 * {

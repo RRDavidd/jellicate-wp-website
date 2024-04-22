@@ -20,7 +20,6 @@ ul.products {
       background: $color1!important;
       color: $color-white!important;
       border: none!important;
-      padding: 0.5rem 1rem!important;
       border-radius: 5px!important;
       cursor: pointer!important;
 
@@ -38,4 +37,16 @@ ul.products {
 
 section.related.products {
   display: inline-block!important;
+}
+
+.add_to_cart_button, .button.product_type_simple {
+  background: $color1!important;
+  color: $color-white!important;
+  border: none!important;
+  border-radius: 5px!important;
+  cursor: pointer!important;
+
+  &:hover {
+    background: $color2!important;
+  }
 }
