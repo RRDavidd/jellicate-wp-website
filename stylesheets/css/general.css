@@ -90,6 +90,22 @@ ul.products .product .woocommerce-LoopProduct-link img {
   border-radius: 0.785rem30px !important;
 }
 
+.woocommerce-notices-wrapper .woocommerce-message {
+  background: #ffdffd !important;
+  border-radius: 0.785rem !important;
+}
+.woocommerce-notices-wrapper .woocommerce-message .button.wc-forward {
+  background: #ff9ecf !important;
+  color: #ffffff !important;
+  border: none !important;
+  padding: 0.5rem 1rem !important;
+  border-radius: 5px !important;
+  cursor: pointer !important;
+}
+.woocommerce-notices-wrapper .woocommerce-message .button.wc-forward:hover {
+  background: #d99bff !important;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;

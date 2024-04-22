@@ -11,3 +11,22 @@ ul.products {
     }
   }
 }
+
+.woocommerce-notices-wrapper {
+  .woocommerce-message {
+    background: $color3!important;
+    border-radius: .785rem!important;
+    .button.wc-forward {
+      background: $color1!important;
+      color: $color-white!important;
+      border: none!important;
+      padding: 0.5rem 1rem!important;
+      border-radius: 5px!important;
+      cursor: pointer!important;
+
+      &:hover {
+        background: $color2!important;
+      }
+    }
+  }
+}
