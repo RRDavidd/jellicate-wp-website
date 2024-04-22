@@ -30,3 +30,12 @@ ul.products {
     }
   }
 }
+
+.single_add_to_cart_button {
+  background: $color2!important;
+  color: $color-white!important;
+}
+
+section.related.products {
+  display: inline-block!important;
+}

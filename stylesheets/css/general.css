@@ -106,6 +106,15 @@ ul.products .product .woocommerce-LoopProduct-link img {
   background: #d99bff !important;
 }
 
+.single_add_to_cart_button {
+  background: #d99bff !important;
+  color: #ffffff !important;
+}
+
+section.related.products {
+  display: inline-block !important;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;

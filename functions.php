@@ -11,6 +11,13 @@ function enqueue_scripts_and_stylesheets() {
 }
 add_action('wp_enqueue_scripts', 'enqueue_scripts_and_stylesheets');
 
+add_action( 'wp', 'my_remove_lightbox', 99 );
+function my_remove_lightbox() {
+   remove_theme_support( 'wc-product-gallery-lightbox' );
+}
+
+//remove wc lightbox
+
 //make post editor classic editor
 add_filter('use_block_editor_for_post', '__return_false', 10);
 
