@@ -81,7 +81,30 @@ header {
   margin-top: 1rem;
   margin-bottom: 1.5rem;
 }
+header .burger-menu {
+  display: none;
+}
 
+@media screen and (max-width: 767px) {
+  header .burger-menu {
+    display: block;
+    cursor: pointer;
+  }
+  header .burger-menu .line1, header .burger-menu .line2, header .burger-menu .line3 {
+    background: #9b9b9b;
+    height: 3px;
+    width: 25px;
+    margin: 5px;
+  }
+  header .menu-header-menu-container {
+    display: none;
+  }
+}
+@media screen and (max-width: 425px) {
+  header .header-logo-1 {
+    display: none;
+  }
+}
 ul.products .product {
   background: #ffdffd !important;
   border-radius: 0.785rem !important;
@@ -198,15 +221,4 @@ body a, main a {
 
 .main-body {
   margin-bottom: 1rem;
-}
-
-@media screen and (max-width: 767px) {
-  header .menu-header-menu-container {
-    display: none;
-  }
-}
-@media screen and (max-width: 425px) {
-  header .header-logo-1 {
-    display: none;
-  }
 }

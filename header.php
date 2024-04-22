@@ -11,7 +11,7 @@
     This is a test banner
   </div>
   <main class="main-body container">
-    <header class="d-flex justify-content-between">
+    <header class="d-flex justify-content-between align-items-center">
       <a class="header-logo-1" href="<?php echo get_home_url(); ?>">
         <figure>
           <img src="<?php echo get_template_directory_uri(); ?>/public/images/logo.png" width="50" alt="logo">
@@ -73,4 +73,10 @@
           ));
         ?>
       </nav>
+      <!-- burger menu -->
+      <div class="burger-menu">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
     </header>
