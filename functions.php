@@ -40,3 +40,19 @@ function wcs_woo_remove_reviews_tab($tabs) {
     return $tabs;
 }
 
+//hide sku in single product
+add_filter( 'wc_product_sku_enabled', '__return_false' );
+
+//hide categories in single product
+remove_action('woocommerce_single_product_summary', 'woocommerce_template_single_meta', 40);
+
+//hide stock except for admin
+add_filter( 'woocommerce_get_stock_html', 'hide_stock_except_admin', 10, 2 );
+function hide_stock_except_admin( $html, $product ) {
+    if ( ! current_user_can( 'manage_options' ) ) {
+        return '';
+    }
+    return $html;
+}
+
+
