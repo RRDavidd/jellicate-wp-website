@@ -1,17 +1,21 @@
 <?php get_header();
 ?>
 <main>
-    <swiper-container class="mySwiper" navigation="true">
-        <swiper-slide>Slide 1</swiper-slide>
-        <swiper-slide>Slide 2</swiper-slide>
-        <swiper-slide>Slide 3</swiper-slide>
-        <swiper-slide>Slide 4</swiper-slide>
-        <swiper-slide>Slide 5</swiper-slide>
-        <swiper-slide>Slide 6</swiper-slide>
-        <swiper-slide>Slide 7</swiper-slide>
-        <swiper-slide>Slide 8</swiper-slide>
-        <swiper-slide>Slide 9</swiper-slide>
-    </swiper-container>
+    <div class="swiper mySwiper mb-3">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img src="<?php echo get_template_directory_uri(); ?>/public/images/placeholder.jpg" alt="logo">
+            </div>
+            <div class="swiper-slide">
+                <img src="<?php echo get_template_directory_uri(); ?>/public/images/placeholder.jpg" alt="logo">
+            </div>
+            <div class="swiper-slide">
+                <img src="<?php echo get_template_directory_uri(); ?>/public/images/placeholder.jpg" alt="logo">
+            </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+    </div>
     <div class="hero-banner row">
         <figure class="col-md-6 col-12">
             <img src="<?php echo get_template_directory_uri(); ?>/public/images/hero-1.jpg"  alt="logo">
