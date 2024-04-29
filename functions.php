@@ -4,6 +4,8 @@
 function enqueue_scripts_and_stylesheets() {
   //bootstrap node module
   wp_enqueue_style('bootstrap', 'https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css');
+  wp_enqueue_style('swiperjs-css', 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css');
+  wp_enqueue_script('swiperjs', 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js');
 
   //my css and js
   wp_enqueue_style('stylesheet', get_template_directory_uri() . '/stylesheets/css/general.css');
