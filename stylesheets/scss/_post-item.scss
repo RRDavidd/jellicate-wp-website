@@ -9,6 +9,14 @@
       .post-description {
         margin-bottom: 1.5rem;
       }
+      .button {
+        padding: 0.5rem!important;
+        background: $color4!important;
+
+        &:hover {
+          background: $color2!important;
+        }
+      }
     }
     .post-image {
       img {
@@ -19,5 +27,5 @@
         object-fit: cover;
       }
     }
-}
+  }
 }

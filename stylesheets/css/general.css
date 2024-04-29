@@ -54,6 +54,13 @@ footer .menu-footer-menu-container li {
 .post-container .post-item .post-content .post-description {
   margin-bottom: 1.5rem;
 }
+.post-container .post-item .post-content .button {
+  padding: 0.5rem !important;
+  background: #f09eff !important;
+}
+.post-container .post-item .post-content .button:hover {
+  background: #d99bff !important;
+}
 .post-container .post-item .post-image img {
   width: 100%;
   height: auto;
