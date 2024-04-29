@@ -201,6 +201,11 @@ section.related.products {
   margin-left: 1rem !important;
 }
 
+.woocommerce-product-gallery__wrapper .woocommerce-product-gallery__image img {
+  border-radius: 0.785rem !important;
+  padding: 1rem !important;
+}
+
 form.woocommerce-checkout .woocommerce-billing-fields h3 {
   font-family: "Archivo", sans-serif !important;
   font-weight: bold !important;

@@ -72,3 +72,12 @@ section.related.products {
 .added_to_cart.wc-forward {
   margin-left: 1rem!important;
 }
+
+.woocommerce-product-gallery__wrapper {
+  .woocommerce-product-gallery__image {
+    img {
+      border-radius: .785rem!important;
+      padding: 1rem!important;
+    }
+  }
+}
