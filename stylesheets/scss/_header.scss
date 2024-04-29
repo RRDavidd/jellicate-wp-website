@@ -17,6 +17,34 @@ header {
     margin-bottom: 1.5rem;
     .burger-menu {
         display: none;
+        position: relative;
+    }
+    .mobile-menu {
+        display: none;
+        .menu-header-menu-container {
+          ul {
+            li {
+              list-style-type: none;
+            }
+          }
+        }
+    }
+    .mobile-menu.active {
+      position: absolute;
+      display: block;
+      background: $color4;
+      z-index: 500;
+      right: 0;
+      border-radius: .75rem;
+        .menu-header-menu-container {
+          padding: 1.5rem;
+          #menu-header-menu-1 {
+            padding-left: 0;
+            li {
+              margin: 1rem 0;
+            }
+          }
+        }
     }
 }
 
@@ -34,7 +62,7 @@ header {
           margin: 5px;
         }
       }
-      .menu-header-menu-container {
+      .desktop-menu .menu-header-menu-container {
         display: none;
       }
     }

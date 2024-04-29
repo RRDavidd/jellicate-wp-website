@@ -22,7 +22,7 @@
           <img src="<?php echo get_template_directory_uri(); ?>/public/images/jellicate-text.png" width="200" alt="logo">
         </figure>
       </a>
-      <nav>
+      <nav class="desktop-menu">
       <!-- Need to use walker for cart number -->
       <?php
         class Cart_Walker extends Walker_Nav_Menu {
@@ -78,5 +78,15 @@
         <div class="line1"></div>
         <div class="line2"></div>
         <div class="line3"></div>
+        <nav class="mobile-menu">
+          <?php
+            wp_nav_menu(array(
+                'menu' => 'Header Menu',
+                'menu_class' => 'header-menu',
+                'walker' => new Cart_Walker()
+            ));
+          ?>
+        </nav>
       </div>
+      <!-- mobile menu -->
     </header>
