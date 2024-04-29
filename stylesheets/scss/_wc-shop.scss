@@ -6,7 +6,7 @@ ul.products {
     padding: 30px!important;
     .woocommerce-LoopProduct-link {
       img {
-        border-radius: .785rem30px!important;
+        border-radius: .785rem!important;
       }
     }
   }
@@ -67,4 +67,8 @@ section.related.products {
     border-radius: 50%!important;
     padding: 5px!important;
   }
+}
+
+.added_to_cart.wc-forward {
+  margin-left: 1rem!important;
 }

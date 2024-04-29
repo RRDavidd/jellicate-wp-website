@@ -4,10 +4,10 @@
     <div class="swiper mySwiper mb-3">
         <div class="swiper-wrapper">
             <div class="swiper-slide">
-                <img src="<?php echo get_template_directory_uri(); ?>/public/images/placeholder.jpg" alt="logo">
+                <img src="<?php echo get_template_directory_uri(); ?>/public/images/hero-1.jpg" alt="logo">
             </div>
             <div class="swiper-slide">
-                <img src="<?php echo get_template_directory_uri(); ?>/public/images/placeholder.jpg" alt="logo">
+                <img src="<?php echo get_template_directory_uri(); ?>/public/images/hero-2.jpg" alt="logo">
             </div>
             <div class="swiper-slide">
                 <img src="<?php echo get_template_directory_uri(); ?>/public/images/placeholder.jpg" alt="logo">

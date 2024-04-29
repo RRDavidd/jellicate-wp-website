@@ -110,7 +110,7 @@ ul.products .product {
   padding: 30px !important;
 }
 ul.products .product .woocommerce-LoopProduct-link img {
-  border-radius: 0.785rem30px !important;
+  border-radius: 0.785rem !important;
 }
 
 .woocommerce-notices-wrapper .woocommerce-message {
@@ -164,6 +164,10 @@ section.related.products {
   color: #ffffff !important;
   border-radius: 50% !important;
   padding: 5px !important;
+}
+
+.added_to_cart.wc-forward {
+  margin-left: 1rem !important;
 }
 
 form.woocommerce-checkout .woocommerce-billing-fields h3 {
