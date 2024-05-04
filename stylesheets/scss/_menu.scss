@@ -8,24 +8,3 @@
 }
 
 
-//set footer to be always at the bottom of the page and take full width
-footer{
-  bottom: 0;
-  right: 0;
-  width: 100%;
-  background-color: $color1;
-  color: $color-white;
-  padding: 1rem;
-  font-size: 1.2rem;
-  font-weight: bold;
-  font-family: $font-archivo;
-  margin-top: auto;
-
-  .menu-footer-menu-container {
-    li {
-      text-decoration: none;
-      list-style: none;
-      margin-left: 1rem;
-    }
-  }
-}

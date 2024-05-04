@@ -24,24 +24,6 @@
   margin-left: 1rem;
 }
 
-footer {
-  bottom: 0;
-  right: 0;
-  width: 100%;
-  background-color: #ff9ecf;
-  color: #ffffff;
-  padding: 1rem;
-  font-size: 1.2rem;
-  font-weight: bold;
-  font-family: "Archivo", sans-serif;
-  margin-top: auto;
-}
-footer .menu-footer-menu-container li {
-  text-decoration: none;
-  list-style: none;
-  margin-left: 1rem;
-}
-
 .post-container {
   margin-bottom: 2rem;
   margin-top: 2rem;
@@ -264,6 +246,24 @@ form.woocommerce-checkout .woocommerce-additional-fields .woocommerce-input-wrap
 }
 .swiper .swiper-button-next::after, .swiper .swiper-button-prev::after {
   color: #ff9ecf !important;
+}
+
+footer {
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  background-color: #c4fffa;
+  color: #ffffff;
+  padding: 1rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+  font-family: "Archivo", sans-serif;
+  margin-top: auto;
+}
+footer .menu-footer-menu-container li {
+  text-decoration: none;
+  list-style: none;
+  margin-left: 1rem;
 }
 
 * {
