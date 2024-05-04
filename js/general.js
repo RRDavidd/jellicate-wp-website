@@ -9,6 +9,8 @@ let swiper = new Swiper(".mySwiper", {
     allowSlideNext: true,
     allowSlidePrev: true,
     loop: true,
+    calculateHeight: true,
+    autoHeight: true
 });
 
 document.addEventListener('DOMContentLoaded', (event) => {
