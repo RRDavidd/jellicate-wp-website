@@ -50,7 +50,10 @@ $home_video = get_field('home_video', $home_id);
                     </a>
                     <div class="post-content">
                         <h4><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h4>
-                        <?php echo "<a class='button' href='".get_the_permalink()."'>Read More</a>"; ?>
+                        <?php
+                        $product = wc_get_product($post->ID);
+                        echo "<a class='button' href='". $product->add_to_cart_url()."'>Add to Cart</a>";
+                        ?>
                     </div>
                 </div>
             <?php endforeach; wp_reset_postdata(); ?>
@@ -66,7 +69,10 @@ $home_video = get_field('home_video', $home_id);
                     </a>
                     <div class="post-content">
                         <h4><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h4>
-                        <?php echo "<a class='button' href='".get_the_permalink()."'>Read More</a>"; ?>
+                        <?php
+                        $product = wc_get_product($post->ID);
+                        echo "<a class='button' href='". $product->add_to_cart_url()."'>Add to Cart</a>";
+                        ?>
                     </div>
                 </div>
             <?php endforeach; wp_reset_postdata(); ?>

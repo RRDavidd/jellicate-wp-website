@@ -7,8 +7,13 @@
   <title><?php echo get_bloginfo( 'name' ); ?></title>
 </head>
 <body <?php body_class(); ?>>
+<?php
+  $home_id = 10;
+  $banner_text = get_field('banner_text', $home_id);
+
+?>
   <div class="header-banner1">
-    This is a test banner
+    <?php echo $banner_text ? $banner_text : "Welcome To Jellicate Nailz!"?>
   </div>
   <main class="main-body container">
     <header class="d-flex justify-content-between align-items-center">
