@@ -9,7 +9,7 @@
 }
 @font-face {
   font-family: "Libre Franklin";
-  src: url("../../fonts/LibreFranklin-Thin.woff2") format("woff2"), url("../../fonts/LibreFranklin-Thin.woff") format("woff");
+  src: url("../../fonts/LibreFranklin-VariableFont_wght.woff2") format("woff2"), url("../../fonts/LibreFranklin-VariableFont_wght.woff") format("woff");
 }
 @font-face {
   font-family: "Libre Franklin Italic";
@@ -293,7 +293,6 @@ body h1, body h2, body h3, body h4, body h5, body h6, main h1, main h2, main h3,
 }
 body p, body li, main p, main li {
   font-family: "Libre Franklin", sans-serif;
-  font-weight: 600;
   color: #000000;
   margin: 0.5rem 0;
 }
