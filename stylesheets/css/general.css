@@ -317,10 +317,26 @@ body a, main a {
   color: #585858;
 }
 
-.hero-banner figure img {
+.hero-banner .hero-post-image {
+  position: relative;
+}
+.hero-banner .hero-post-image:hover .gallery-image {
+  opacity: 1;
+}
+.hero-banner .hero-post-image:hover .main-image {
+  opacity: 0;
+}
+.hero-banner .hero-post-image img {
   width: 100%;
   height: 500px;
   object-fit: cover;
+}
+.hero-banner .hero-post-image .gallery-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
 }
 .hero-banner video {
   width: 100%;

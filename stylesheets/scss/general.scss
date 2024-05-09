@@ -69,13 +69,33 @@ body, main {
 }
 
 .hero-banner {
-  figure {
-    img {
-      width: 100%;
-      height: 500px;
-      object-fit: cover;
+    .hero-post-image {
+      position: relative;
+
+      &:hover {
+        .gallery-image {
+          opacity: 1;
+        }
+        .main-image {
+          opacity: 0;
+        }
+
+      }
+
+      img {
+        width: 100%;
+        height: 500px;
+        object-fit: cover;
+      }
+
+      .gallery-image {
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0;
+        transition: opacity 0.3s ease-in-out;
+      }
     }
-  }
   video {
     width: 100%;
     height: 450px;

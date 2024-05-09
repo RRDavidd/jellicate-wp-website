@@ -10,8 +10,8 @@ $featured_bundles_block_title = get_field('featured_bundles_block_title', $home_
 $swiper_image_1 = get_field('swiper_image_1', $home_id);
 $swiper_image_2 = get_field('swiper_image_2', $home_id);
 
-$home_image_1 = get_field('home_image_1', $home_id);
-$home_image_2 = get_field('home_image_2', $home_id);
+$home_image = get_field('home_image', $home_id);
+
 $home_video = get_field('home_video', $home_id);
 ?>
 <main>
@@ -28,12 +28,28 @@ $home_video = get_field('home_video', $home_id);
         <div class="swiper-button-prev"></div>
     </div>
     <div class="hero-banner row">
-        <figure class="col-md-6 col-12">
-            <img src="<?php echo $home_image_1['url']; ?>" alt="<?php echo $home_image_1['alt']; ?>">
-        </figure>
-        <figure class="col-md-6 col-12">
-            <img src="<?php echo $home_image_2['url']; ?>" alt="<?php echo $home_image_2['alt']; ?>">
-        </figure>
+        <?php if($home_image) : ?>
+            <?php foreach($home_image as $post) : setup_postdata( $post );
+                $product = wc_get_product($post->ID);
+                $attachment_ids = $product->get_gallery_image_ids();
+                $first_gallery_img_url = wp_get_attachment_url($attachment_ids[0]);
+            ?>
+                <div class="col-md-6 col-12">
+                    <a href="<?php the_permalink(); ?>">
+                        <div class="hero-post-image">
+                            <figure class="main-image">
+                                <img src="<?php echo get_the_post_thumbnail_url(); ?>" alt="<?php the_title(); ?>">
+                            </figure>
+                            <?php if($first_gallery_img_url) : ?>
+                                <figure class="gallery-image">
+                                    <img src="<?php echo $first_gallery_img_url; ?>" alt="<?php the_title(); ?>">
+                                </figure>
+                            <?php endif; ?>
+                        </div>
+                    </a>
+                </div>
+            <?php endforeach; ?>
+        <?php endif; ?>
         <div class="col-12">
             <video loop muted autoplay>
                 <source src="<?php echo $home_video; ?>" type="video/mp4">
