@@ -43,12 +43,28 @@
 .post-container .post-item .post-content .button:hover {
   background: #d99bff !important;
 }
+.post-container .post-item .post-image {
+  position: relative;
+}
+.post-container .post-item .post-image:hover .gallery-image {
+  opacity: 1;
+}
+.post-container .post-item .post-image:hover .main-image {
+  opacity: 0;
+}
 .post-container .post-item .post-image img {
   width: 100%;
-  height: auto;
+  height: 275px;
   max-height: 300px;
   border-radius: 0.785rem;
   object-fit: cover;
+}
+.post-container .post-item .post-image .gallery-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
 }
 
 .header-banner1 {

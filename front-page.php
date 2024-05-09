@@ -43,15 +43,28 @@ $home_video = get_field('home_video', $home_id);
     <div class="post-container container row gap-3 justify-content-center">
         <h2 class="mb-0"><?php echo $featured_nails_block_title; ?></h2>
         <?php if($featured_nails) :?>
-            <?php foreach($featured_nails as $post) : setup_postdata($post); ?>
+            <?php foreach($featured_nails as $post) : setup_postdata($post);
+                $product = wc_get_product($post->ID);
+                $attachment_ids = $product->get_gallery_image_ids();
+                $first_gallery_img_url = wp_get_attachment_url($attachment_ids[0]);
+            ?>
                 <div class="post-item col-md-3 col-12">
                     <a href="<?php the_permalink(); ?>">
-                        <figure class="post-image"><img src="<?php echo get_the_post_thumbnail_url(); ?>" alt="<?php the_title(); ?>"></figure>
+                        <div class="post-image">
+                            <figure class="main-image">
+                                <img src="<?php echo get_the_post_thumbnail_url(); ?>" alt="<?php the_title(); ?>">
+                            </figure>
+                            <?php if($first_gallery_img_url) : ?>
+                                <figure class="gallery-image">
+                                    <img src="<?php echo $first_gallery_img_url; ?>" alt="<?php the_title(); ?>">
+                                </figure>
+                            <?php endif; ?>
+                        </div>
                     </a>
                     <div class="post-content">
                         <h4><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h4>
                         <?php
-                        $product = wc_get_product($post->ID);
+
                         echo "<a class='button' href='". $product->add_to_cart_url()."'>Add to Cart</a>";
                         ?>
                     </div>
@@ -62,15 +75,27 @@ $home_video = get_field('home_video', $home_id);
     <div class="post-container container row gap-3 justify-content-center">
         <h2 class="mb-0"><?php echo $featured_bundles_block_title; ?></h2>
         <?php if($featured_bundles) :?>
-            <?php foreach($featured_bundles as $post) : setup_postdata($post); ?>
+            <?php foreach($featured_bundles as $post) : setup_postdata($post);
+                $product = wc_get_product($post->ID);
+                $attachment_ids = $product->get_gallery_image_ids();
+                $first_gallery_img_url = wp_get_attachment_url($attachment_ids[0]);
+            ?>
                 <div class="post-item col-md-3 col-12">
                     <a href="<?php the_permalink(); ?>">
-                        <figure class="post-image"><img src="<?php echo get_the_post_thumbnail_url(); ?>" alt="<?php the_title(); ?>"></figure>
+                        <div class="post-image ">
+                            <figure class="main-image">
+                                <img src="<?php echo get_the_post_thumbnail_url(); ?>" alt="<?php the_title(); ?>">
+                            </figure>
+                            <?php if($first_gallery_img_url) : ?>
+                                <figure class="gallery-image">
+                                    <img src="<?php echo $first_gallery_img_url; ?>" alt="<?php the_title(); ?>">
+                                </figure>
+                            <?php endif; ?>
+                        </div>
                     </a>
                     <div class="post-content">
                         <h4><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h4>
                         <?php
-                        $product = wc_get_product($post->ID);
                         echo "<a class='button' href='". $product->add_to_cart_url()."'>Add to Cart</a>";
                         ?>
                     </div>
