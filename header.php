@@ -76,6 +76,7 @@
               'menu_class' => 'header-menu',
               'walker' => new Cart_Walker()
           ));
+          //search
         ?>
       </nav>
       <!-- burger menu -->

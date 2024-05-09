@@ -55,4 +55,8 @@ function hide_stock_except_admin( $html, $product ) {
     return $html;
 }
 
+function before_shop_loop_search() {
+    echo do_shortcode('[aws_search_form]');
+}
+add_action( 'woocommerce_before_shop_loop', 'before_shop_loop_search' );
 
