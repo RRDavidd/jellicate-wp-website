@@ -15,6 +15,7 @@ $home_image = get_field('home_image', $home_id);
 $home_video = get_field('home_video', $home_id);
 ?>
 <main>
+    <?php echo do_shortcode('[aws_search_form]'); ?>
     <div class="swiper mySwiper mb-3">
         <div class="swiper-wrapper">
             <div class="swiper-slide">
