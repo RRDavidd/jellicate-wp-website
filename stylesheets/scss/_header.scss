@@ -19,6 +19,15 @@ header {
         display: none;
         position: relative;
     }
+
+    .desktop-menu {
+      li {
+        a {
+          font-weight: 900;
+        }
+      }
+    }
+
     .mobile-menu {
         display: none;
         .menu-header-menu-container {

@@ -89,6 +89,9 @@ header .burger-menu {
   display: none;
   position: relative;
 }
+header .desktop-menu li a {
+  font-weight: 900;
+}
 header .mobile-menu {
   display: none;
 }
@@ -315,6 +318,19 @@ body p, body li, main p, main li {
 body a, main a {
   text-decoration: none;
   color: #585858;
+}
+
+.featured-banner {
+  position: relative;
+}
+.featured-banner img {
+  width: 100%;
+}
+.featured-banner .button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .hero-banner .hero-post-image {

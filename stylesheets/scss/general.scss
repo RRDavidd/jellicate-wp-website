@@ -68,6 +68,19 @@ body, main {
   }
 }
 
+.featured-banner {
+  position: relative;
+  img {
+    width: 100%;
+  }
+  .button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
 .hero-banner {
     .hero-post-image {
       position: relative;

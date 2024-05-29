@@ -28,6 +28,12 @@ $home_video = get_field('home_video', $home_id);
         <div class="swiper-button-next"></div>
         <div class="swiper-button-prev"></div>
     </div>
+    <div class="featured-banner">
+        <figure>
+            <img src="<?php echo get_template_directory_uri() . '/public/images/featured_banner.png'?>" alt="">
+        </figure>
+        <a class="button" href="<?php echo get_permalink(woocommerce_get_page_id('shop')); ?>">SHOP NOW</a>
+    </div>
     <div class="hero-banner row">
         <?php if($home_image) : ?>
             <?php foreach($home_image as $post) : setup_postdata( $post );
