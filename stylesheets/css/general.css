@@ -90,7 +90,7 @@ header .burger-menu {
   position: relative;
 }
 header .desktop-menu li a {
-  font-weight: 900;
+  font-weight: 600;
 }
 header .mobile-menu {
   display: none;
