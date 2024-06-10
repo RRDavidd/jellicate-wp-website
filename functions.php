@@ -41,7 +41,7 @@ function wcs_woo_remove_reviews_tab($tabs) {
 }
 
 //hide sku in single product
-add_filter( 'wc_product_sku_enabled', '__return_false' );
+// add_filter( 'wc_product_sku_enabled', '__return_false' );
 
 //hide categories in single product
 remove_action('woocommerce_single_product_summary', 'woocommerce_template_single_meta', 40);
