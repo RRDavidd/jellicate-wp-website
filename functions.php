@@ -60,3 +60,21 @@ function before_shop_loop_search() {
 }
 add_action( 'woocommerce_before_shop_loop', 'before_shop_loop_search' );
 
+function add_open_graph_tags() {
+  if (is_single() || is_page()) {
+      global $post;
+      if (has_post_thumbnail($post->ID)) {
+          $thumbnail_id = get_post_thumbnail_id($post->ID);
+          $thumbnail_url = wp_get_attachment_image_src($thumbnail_id, 'full')[0];
+      } else {
+          // Default image if no featured image is set
+          $thumbnail_url = get_template_directory_uri() . '/public/images/sale-image.jpg';
+      }
+      ?>
+      <meta property="og:image" content="<?php echo esc_url($thumbnail_url); ?>" />
+      <meta property="og:image:width" content="1200" />
+      <meta property="og:image:height" content="630" />
+      <?php
+  }
+}
+add_action('wp_head', 'add_open_graph_tags');
