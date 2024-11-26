@@ -262,6 +262,10 @@ form.woocommerce-checkout .woocommerce-additional-fields .woocommerce-input-wrap
   color: #c4fffa !important;
 }
 
+.swiper .swiper-slide.slide3 img {
+  height: 728.64px;
+}
+
 footer {
   bottom: 0;
   right: 0;
